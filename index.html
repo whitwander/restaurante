@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LeBrasil Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info-subtle p-3">
+            <div class="container-fluid flex-space-between mx-5">
+                <a class="navbar-brand" href="#">LeBrasil Restaurant</a>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cardápio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img class="w-100" src="images/banner.jpg" alt="foto de comidas sobre à mesa">
+        <h1 class="text-center mt-3">Nossos destaques!</h1>
+        <section class="container mt-5">
+            <div class="row ">
+                <div class="col text-center">
+                    <img src="images/macarrão.png" class="card-img-top rounded" style="width: 25rem;" alt="...">
+                    <div class="card-body">
+                        <h3 class="text-center my-3">Macarronada a bolonhesa</h3>
+                        <p class="card-text text-center">A macarronada completa que sempre cai bem no seu jantar!</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <img src="images/bife com fritas.jpeg" class="card-img-top rounded" style="width: 24rem;" alt="...">
+                    <div class="">
+                        <h3 class="text-center my-3">Bife de boi com fritas</h3>
+                        <p class="card-text text-center">Uma carne suculenta à sua escolha e no seu ponto com a batata
+                            mais crocante da cidade, seguidos de mais dois acompanhamentos!</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <img src="images/strogonoff.jpg" class="card-img-top rounded" style="width: 25rem;" alt="...">
+                    <div class="">
+                        <h3 class="text-center my-3">Strogonoff de frango</h3>
+                        <p class="card-text text-center">Strogonoff de frango suculento acompanhado de batata palha e
+                            arroz</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="images/torta de chocolate.jpg" class="card-img-top rounded" style="width: 32rem;" alt="...">
+                    <div class="">
+                        <h3 class="text-center my-3">Torta de chocolate</h3>
+                        <p class="card-text text-center">A torta de chocolate mais saborosa e fresquinha pra você!</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <img src="images/petit gateau.jpg" class="card-img-top rounded" style="width: 26rem;" alt="...">
+                    <div class="">
+                        <h3 class="text-center my-3">Petit gateau c/ sorvete</h3>
+                        <p class="card-text text-center">Petit gateau quentinho feito na hora com sua melhor combinação
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-info-subtle">
+            <h1 class="text-center mt-5 p-4">Serviços de reserva</h1>
+            <div class="mx-5 p-4 d-flex justify-content-center">
+                <div class="text-center" style="width: 40rem;">
+                    <img src="images/festa de casamento.jpeg" class="card-img-top rounded border border-black border-3"
+                        alt="festa de casamento">
+                    <div class="">
+                        <h3 class="text-center my-3">Agende sua festa!</h3>
+                        <p class="card-text text-center fs-5">Espaço preparado e perfeito para realização de festas de
+                            casamento, aniversários e outras confraternizações. Tudo ajustado conforme a sua necessidade
+                            e conforto contando com nosso cardápio e nossa equipe totalmente disposta a atender o seu
+                            pedido!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-4 mx-5">
+            <h2 class="text-center">Faça o agendamento</h2>
+            <form class="d-flex justify-content-center flex-column mt-4">
+                <label for="nome">Nome: </label>
+                <input class="form-control" type="text" name="nome">
+                <label for="numero">Número de telefone: </label>
+                <input class="form-control" type="number" name="numero">
+                <label for="quantidade">Quantidade de pessoas: </label>
+                <select class="form-control" name="quantidade" id="quantidade">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8+</option>
+                </select>
+                <label for="data">Para o dia: </label>
+                <input class="form-control" type="date" name="data">
+                <button class="btn btn-warning mt-3">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="mt-5">
+        <p class="text-center">desenvolvido por Victor Mikhael &#169 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
